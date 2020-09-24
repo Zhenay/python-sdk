@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.ps_list_builder import PsListBuilder
+
+from platron.request.request_builders import PsListBuilder
 
 
 class PsListBuilderTest(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.get_bin_info_builder import GetBinInfoBuilder
+
+from platron.request.request_builders import GetBinInfoBuilder
 
 
 class GetBinInfoBuilderTest(unittest.TestCase):

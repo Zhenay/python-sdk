@@ -1,5 +1,6 @@
 import unittest
-from platron.request.data_objects.bank_card import BankCard
+
+from platron.request.data_objects import BankCard
 
 
 class BankCardTest(unittest.TestCase):

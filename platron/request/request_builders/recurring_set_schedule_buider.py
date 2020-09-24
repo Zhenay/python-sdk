@@ -1,6 +1,7 @@
+import re
+
 from platron.request.request_builders.request_builder import RequestBuilder
 from platron.sdk_exception import SdkException
-import re
 
 
 class RecurringSetScheduleBuilder(RequestBuilder):

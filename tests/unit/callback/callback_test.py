@@ -1,6 +1,7 @@
 import unittest
-from platron.callback.callback import Callback
 import xml.etree.ElementTree
+
+from platron.callback.callback import Callback
 
 
 class CallbackTest(unittest.TestCase):

@@ -36,8 +36,8 @@ tox
 ### 1. Создание транзакции
 
 ```python
-from platron.request.request_builders.init_payment_builder import InitPaymentBuilder
-from platron.request.clients.post_client import PostClient
+from platron.request.request_builders import InitPaymentBuilder
+from platron.request.clients import PostClient
 from platron.sdk_exception import SdkException
 
 client = PostClient('merchant_id', 'secret_key')
@@ -53,8 +53,8 @@ except SdkException as msg:
 ### 2. Запрос реестра
 
 ```python
-from platron.request.request_builders.get_registry_builder import GetRegistryBuilder
-from platron.request.clients.post_client import PostClient
+from platron.request.request_builders import GetRegistryBuilder
+from platron.request.clients import PostClient
 from platron.sdk_exception import SdkException
 
 client = PostClient('merchant_id', 'secret_key')
@@ -70,8 +70,8 @@ except SdkException as msg:
 ### 3. Проведение клиринга 
 
 ```python
-from platron.request.request_builders.do_capture_builder import DoCaptureBuilder
-from platron.request.clients.post_client import PostClient
+from platron.request.request_builders import DoCaptureBuilder
+from platron.request.clients import PostClient
 from platron.sdk_exception import SdkException
 
 client = PostClient('merchant_id', 'secret_key')
@@ -94,13 +94,13 @@ order_available = 1
 params_from_platron = {}
 
 callback = Callback('merchant_return_url_script', 'sdvsfdvsfdvsdv')
-if callback.validate_sig(params_from_platron) :
+if callback.validate_sig(params_from_platron):
     if order_available:
         callback.response_ok(params_from_platron)
-    else :
-        if callback.can_reject(params_from_platron) :
+    else:
+        if callback.can_reject(params_from_platron):
             callback.response_reject(params_from_platron, 'Заказ недоступен для оплаты')
-        else :
+        else:
             ''' Сделать запрос через систему выплат или через заявку на возврат '''
             pass
 else:

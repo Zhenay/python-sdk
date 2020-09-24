@@ -1,5 +1,6 @@
 import unittest
-from platron.request.data_objects.avia_gds import AviaGds
+
+from platron.request.data_objects import AviaGds
 
 
 class AviaGdsTest(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.recurring_get_schedule_builder import RecurringGetScheduleBuilder
+
+from platron.request.request_builders import RecurringGetScheduleBuilder
 
 
 class RecurringGetScheduleBuilderTest(unittest.TestCase):

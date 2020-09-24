@@ -1,5 +1,6 @@
 import unittest
-from platron.request.data_objects.item import Item
+
+from platron.request.data_objects import Item
 from platron.sdk_exception import SdkException
 
 

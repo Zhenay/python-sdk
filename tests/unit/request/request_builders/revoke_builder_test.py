@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.revoke_builder import RevokeBuilder
+
+from platron.request.request_builders import RevokeBuilder
 
 
 class RevokeBuilderTest(unittest.TestCase):

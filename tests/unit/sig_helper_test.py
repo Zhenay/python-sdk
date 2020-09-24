@@ -1,6 +1,7 @@
 import unittest
-from platron.sig_helper import SigHelper
 from xml.etree.ElementTree import Element, SubElement, tostring
+
+from platron.sig_helper import SigHelper
 
 
 class SigHelperTest(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.get_moneyback_status_builder import GetMoneybackStatusBuilder
+
+from platron.request.request_builders import GetMoneybackStatusBuilder
 
 
 class GetMoneybackStatusBuilderTest(unittest.TestCase):

@@ -1,6 +1,6 @@
+from platron.request.data_objects import Item
 from platron.request.request_builders.request_builder import RequestBuilder
 from platron.sdk_exception import SdkException
-from platron.request.data_objects.item import Item
 
 
 class ReceiptBuilder(RequestBuilder):

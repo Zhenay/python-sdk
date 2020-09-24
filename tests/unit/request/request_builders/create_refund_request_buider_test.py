@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.create_refund_request_builder import CreateRefundRequestBuider
+
+from platron.request.request_builders import CreateRefundRequestBuider
 
 
 class CreateRefundRequestBuilderTest(unittest.TestCase):

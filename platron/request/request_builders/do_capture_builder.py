@@ -1,6 +1,6 @@
+from platron.request.data_objects import LongRecord
 from platron.request.request_builders.request_builder import RequestBuilder
 from platron.sdk_exception import SdkException
-from platron.request.data_objects.long_record import LongRecord
 
 
 class DoCaptureBuilder(RequestBuilder):

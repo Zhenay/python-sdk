@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.get_registry_builder import GetRegistryBuilder
+
+from platron.request.request_builders import GetRegistryBuilder
 
 
 class GetRegistryBuilderTest(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.make_recurring_builder import MakeRecurringBuilder
+
+from platron.request.request_builders import MakeRecurringBuilder
 from platron.sdk_exception import SdkException
 
 

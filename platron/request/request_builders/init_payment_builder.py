@@ -1,7 +1,6 @@
+from platron.request.data_objects import AviaGds, BankCard
 from platron.request.request_builders.request_builder import RequestBuilder
 from platron.sdk_exception import SdkException
-from platron.request.data_objects.bank_card import BankCard
-from platron.request.data_objects.avia_gds import AviaGds
 
 
 class InitPaymentBuilder(RequestBuilder):

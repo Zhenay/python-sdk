@@ -1,9 +1,9 @@
 import unittest
 from unittest.mock import Mock
 
-from platron.request.request_builders.receipt_builder import ReceiptBuilder
+from platron.request.data_objects import Item
+from platron.request.request_builders import ReceiptBuilder
 from platron.sdk_exception import SdkException
-from platron.request.data_objects.item import Item
 
 
 class PsListBuilderTest(unittest.TestCase):

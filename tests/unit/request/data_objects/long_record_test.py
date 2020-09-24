@@ -1,8 +1,7 @@
 import unittest
-from platron.request.data_objects.long_record import LongRecord
-from platron.request.data_objects.tripleg import TripLeg
-from unittest.mock import Mock
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, Mock
+
+from platron.request.data_objects import LongRecord, TripLeg
 
 
 class LongRecordTest(unittest.TestCase):

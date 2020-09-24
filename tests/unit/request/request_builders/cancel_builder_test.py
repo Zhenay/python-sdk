@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.cancel_builder import CancelBuilder
+
+from platron.request.request_builders import CancelBuilder
 
 
 class CancelBuilderTest(unittest.TestCase):

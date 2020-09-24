@@ -1,6 +1,7 @@
+from platron.request.clients import PostClient
+from platron.request.request_builders import GetRegistryBuilder
+
 from .base_integration_test import BaseIntegrationTest
-from platron.request.clients.post_client import PostClient
-from platron.request.request_builders.get_registry_builder import GetRegistryBuilder
 
 
 class GetStatusTest(BaseIntegrationTest):

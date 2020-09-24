@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.recurring_set_schedule_buider import RecurringSetScheduleBuilder
+
+from platron.request.request_builders import RecurringSetScheduleBuilder
 from platron.sdk_exception import SdkException
 
 

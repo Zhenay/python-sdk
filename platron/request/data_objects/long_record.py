@@ -1,5 +1,5 @@
 from platron.request.data_objects.data_object import DataObject
-from platron.request.data_objects.tripleg import TripLeg
+from platron.request.data_objects import TripLeg
 from platron.sdk_exception import SdkException
 
 

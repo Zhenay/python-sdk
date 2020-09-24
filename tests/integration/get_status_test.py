@@ -1,9 +1,10 @@
 from xml.etree.ElementTree import fromstring
 
+from platron.request.clients import PostClient
+from platron.request.request_builders import (GetStatusBuilder,
+                                              InitPaymentBuilder)
+
 from .base_integration_test import BaseIntegrationTest
-from platron.request.clients.post_client import PostClient
-from platron.request.request_builders.get_status_builder import GetStatusBuilder
-from platron.request.request_builders.init_payment_builder import InitPaymentBuilder
 
 
 class GetStatusTest(BaseIntegrationTest):

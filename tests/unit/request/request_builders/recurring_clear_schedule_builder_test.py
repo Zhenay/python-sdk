@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.recurring_clear_schedule_builder import RecurringClearScheduleBuilder
+
+from platron.request.request_builders import RecurringClearScheduleBuilder
 
 
 class RecurringClearScheduleBuilderTest(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.get_status_builder import GetStatusBuilder
+
+from platron.request.request_builders import GetStatusBuilder
 
 
 class GetStatusBuilderTest(unittest.TestCase):

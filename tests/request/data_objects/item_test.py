@@ -1,9 +1,9 @@
 import unittest
 from unittest.mock import Mock
 
+from platron.request.data_objects import Item
 from platron.sdk_exception import SdkException
-from platron.request.data_objects.item import Item
-from platron.sdk_exception import SdkException
+
 
 class ItemTest(unittest.TestCase):
     '''

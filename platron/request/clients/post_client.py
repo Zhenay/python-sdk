@@ -4,8 +4,8 @@ import dicttoxml
 from xml.etree.ElementTree import fromstring
 
 from platron.request.clients.platron_client import PlatronClient
-from platron.sig_helper import SigHelper
 from platron.sdk_exception import SdkException
+from platron.sig_helper import SigHelper
 
 
 class PostClient(PlatronClient):

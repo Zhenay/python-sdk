@@ -1,5 +1,6 @@
 import unittest
-from platron.request.request_builders.do_capture_builder import DoCaptureBuilder
+
+from platron.request.request_builders import DoCaptureBuilder
 
 
 class DoCaptureBuilderTest(unittest.TestCase):

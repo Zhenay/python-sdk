@@ -1,5 +1,6 @@
 import unittest
-from platron.request.clients.post_client import PostClient
+
+from platron.request.clients import PostClient
 from platron.sdk_exception import SdkException
 
 

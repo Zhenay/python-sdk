@@ -1,8 +1,11 @@
 import abc
+
+import six
 from platron.sdk_exception import SdkException
 
 
-class RequestBuilder(metaclass=abc.ABCMeta):
+@six.add_metaclass(abc.ABCMeta)
+class RequestBuilder():
 
     PLATRON_URL = 'https://www.platron.ru/'
 
@@ -28,12 +31,12 @@ class RequestBuilder(metaclass=abc.ABCMeta):
 
     def item_function(self, parent):
         """
-        Как будут называться элементы, не имеющие названия - set()
+        Default name for elements without self name - set()
         """
         return 'item'
 
     def after_xml_created(self, xml):
         """
-        Постобработка xml
+        Xml postprocessing
         """
         return xml

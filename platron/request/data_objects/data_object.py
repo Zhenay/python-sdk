@@ -1,7 +1,9 @@
 import abc
+import six
 
 
-class DataObject(metaclass=abc.ABCMeta):
+@six.add_metaclass(abc.ABCMeta)
+class DataObject():
 
     def get_params(self):
         params = [arg for arg in dir(self) if not arg.startswith('_')]
